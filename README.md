@@ -1,10 +1,11 @@
-# Live Odds Services
-=========
+Live Odds Services
+==================
 
+<-- TODO: enable JavaCI, CodeQL and OpenSSF Scorecard
 [![Java CI](https://github.com/hopbit/live-odds-services/actions/workflows/maven.yml/badge.svg)](https://github.com/hopbit/live-odds-services/actions/workflows/maven.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/?gav=true)
 [![CodeQL](https://github.com/hopbit/live-odds-services/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hopbit/live-odds-services/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/hopbit/live-odds-services/badge)](https://api.securityscorecards.dev/projects/github.com/hopbit/live-odds-services)
+-->
 
 Live Odds Services is a simple library providing Live Football World Cup Score Board functionality. 
 
@@ -79,7 +80,7 @@ See the `NOTICE.txt` file for required notices and attributions.
 Donating
 --------
 You like Live Odds Services? Then [buy me a vinyl](https://buymeacoffee.com/shivioua) 
-to help extending my vinyl collection.
+to help me to extend [my collection](https://www.discogs.com/user/shivioua/collection?header=1&layout=big).
 
 Additional Resources
 --------------------
