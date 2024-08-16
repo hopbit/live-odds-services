@@ -3,7 +3,7 @@ Live Odds Services
 
 <!-- TODO: enable JavaCI, CodeQL and OpenSSF Scorecard
 [![Java CI](https://github.com/hopbit/live-odds-services/actions/workflows/maven.yml/badge.svg)](https://github.com/hopbit/live-odds-services/actions/workflows/maven.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.sportradar/live-odds-services/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/com.sportradar/live-odds-services/?gav=true)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.hopbit/live-odds-services/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/io.github.hopbit/live-odds-services/?gav=true)
 [![CodeQL](https://github.com/hopbit/live-odds-services/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hopbit/live-odds-services/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/hopbit/live-odds-services/badge)](https://api.securityscorecards.dev/projects/github.com/hopbit/live-odds-services)
 -->
@@ -39,7 +39,7 @@ Alternatively, you can pull it from the central Maven repositories:
 
 ```xml
 <dependency>
-  <groupId>com.sportradar</groupId>
+  <groupId>io.github.hopbit</groupId>
   <artifactId>live-odds-services</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </dependency>

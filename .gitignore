@@ -26,3 +26,23 @@ replay_pid*
 # Binary files that should not be tracked in repo
 docs/Coding Exercise v1.10_pl.docx
 docs/Coding Exercise v1.10.pdf
+
+# IntelliJ IDEA files
+.idea
+.iws
+*.iml
+*.ipr
+
+# Maven build files
+target
+maven-eclipse.xml
+build.properties
+site-content
+*~
+
+# Eclipse files
+.settings
+.classpath
+.project
+.externalToolBuilders
+.checkstyle
