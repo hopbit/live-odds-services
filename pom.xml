@@ -193,7 +193,7 @@
                         <target>${maven.compiler.target}</target>
                         <encoding>${commons.encoding}</encoding>
                         <!--
-                          fork is set true by the java-1.x profiles
+                          Fork is set true by the java-1.x profiles
                           This allows the use of a different version of the compiler from the
                           JDK being used to run Maven
                         -->
@@ -206,26 +206,6 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-publish-plugin</artifactId>
-                <configuration>
-                    <content>${project.reporting.outputDirectory}</content>
-                    <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
-                    <checkoutDirectory>${commons.scmPubCheckoutDirectory}</checkoutDirectory>
-                    <serverId>${commons.scmPubServer}</serverId>
-                    <tryUpdate>true</tryUpdate>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>scm-publish</id>
-                        <phase>site-deploy</phase><!-- deploy site with maven-scm-publish-plugin -->
-                        <goals>
-                            <goal>publish-scm</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -308,15 +288,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-publish-plugin</artifactId>
-                <configuration>
-                    <ignorePathsToDelete>
-                        <ignorePathToDelete>javadocs</ignorePathToDelete>
-                    </ignorePathsToDelete>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <configuration>
                     <configLocation>${checkstyle.configdir}/checkstyle.xml</configLocation>
@@ -340,6 +311,9 @@
                     <checkoutDirectory>${commons.scmPubCheckoutDirectory}</checkoutDirectory>
                     <serverId>${commons.scmPubServer}</serverId>
                     <tryUpdate>true</tryUpdate>
+                    <ignorePathsToDelete>
+                        <ignorePathToDelete>javadocs</ignorePathToDelete>
+                    </ignorePathsToDelete>
                 </configuration>
                 <executions>
                     <execution>
