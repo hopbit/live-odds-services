@@ -474,6 +474,16 @@
         <!--    </profile>-->
 
         <profile>
+            <id>java-1.8</id>
+            <properties>
+                <commons.compiler.fork>true</commons.compiler.fork>
+                <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>
+                <commons.compiler.javac>${JAVA_1_8_HOME}/bin/javac</commons.compiler.javac>
+                <commons.compiler.javadoc>${JAVA_1_8_HOME}/bin/javadoc</commons.compiler.javadoc>
+                <commons.surefire.java>${JAVA_1_8_HOME}/bin/java</commons.surefire.java>
+            </properties>
+        </profile>
+        <profile>
             <id>java9+</id>
             <activation>
                 <jdk>[9,)</jdk>
