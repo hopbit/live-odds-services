@@ -68,7 +68,7 @@
         <commons.encoding>UTF-8</commons.encoding>
         <!-- compiler and surefire plugin settings for "java" profiles -->
         <commons.compiler.fork>false</commons.compiler.fork>
-        <commons.compiler.compilerVersion />
+<!--        <commons.compiler.compilerVersion />-->
         <commons.compiler.javac />
         <commons.compiler.javadoc />
         <commons.compiler.version>3.13.0</commons.compiler.version>
@@ -160,7 +160,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>${hopbit.pmd.version}</version>
+                    <version>3.23.0</version>
                     <configuration>
                         <targetJdk>${maven.compiler.target}</targetJdk>
                         <excludeFromFailureFile>src/conf/pmd-exclude.properties</excludeFromFailureFile>
@@ -189,16 +189,16 @@
                     <configuration>
                         <source>${maven.compiler.source}</source>
                         <target>${maven.compiler.target}</target>
-                        <encoding>${commons.encoding}</encoding>
+<!--                        <encoding>${commons.encoding}</encoding>-->
                         <!--
                           Fork is set true by the java-1.x profiles
                           This allows the use of a different version of the compiler from the
                           JDK being used to run Maven
                         -->
-                        <fork>${commons.compiler.fork}</fork>
+<!--                        <fork>${commons.compiler.fork}</fork>-->
                         <!-- the following are only necessary if fork is true -->
-                        <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
-                        <executable>${commons.compiler.javac}</executable>
+<!--                        <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>-->
+<!--                        <executable>${commons.compiler.javac}</executable>-->
                     </configuration>
                 </plugin>
             </plugins>
@@ -210,23 +210,20 @@
                 <version>3.4.1</version>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.8.0</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <quiet>true</quiet>
                     <notimestamp>true</notimestamp>
-                    <links>
-                        <link>https://commons.apache.org/proper/commons-text/apidocs</link>
-                        <link>https://docs.oracle.com/javaee/6/api</link>
-                    </links>
-                    <validateLinks>true</validateLinks>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                    <doclint>all</doclint>
+<!--                    <archive>-->
+<!--                        <manifest>-->
+<!--                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
+<!--                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+<!--                        </manifest>-->
+<!--                    </archive>-->
+<!--                    <doclint>all</doclint>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -242,6 +239,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>plain</id>
@@ -270,6 +268,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
                 <executions>
                     <execution>
                         <goals>
@@ -287,6 +286,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.4.0</version>
                 <configuration>
                     <configLocation>${checkstyle.configdir}/checkstyle.xml</configLocation>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
@@ -296,13 +296,15 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.8.6.2</version>
                 <configuration>
-                    <excludeFilterFile>${basedir}/src/conf/spotbugs-exclude-filter.xml</excludeFilterFile>
+                    <excludeFilterFile>${basedir}/src/conf/spotbaven-surefire-pugs-exclude-filter.xml</excludeFilterFile>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-publish-plugin</artifactId>
+                <version>1.1</version>
                 <configuration>
                     <content>${project.reporting.outputDirectory}</content>
                     <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
@@ -328,26 +330,23 @@
 
     <reporting>
         <plugins>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <quiet>true</quiet>
-                    <notimestamp>true</notimestamp>
-                    <links>
-                        <link>https://commons.apache.org/proper/commons-text/apidocs</link>
-                        <link>https://docs.oracle.com/javaee/6/api</link>
-                    </links>
-                    <validateLinks>true</validateLinks>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                    <doclint>all</doclint>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>3.8.0</version>-->
+<!--                <configuration>-->
+<!--                    <source>${maven.compiler.source}</source>-->
+<!--                    <quiet>true</quiet>-->
+<!--                    <notimestamp>true</notimestamp>-->
+<!--                    <archive>-->
+<!--                        <manifest>-->
+<!--                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
+<!--                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+<!--                        </manifest>-->
+<!--                    </archive>-->
+<!--                    <doclint>all</doclint>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <configuration>
@@ -374,7 +373,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.24.0</version>
+                <version>3.23.0</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -475,7 +474,7 @@
             <id>java-1.8</id>
             <properties>
                 <commons.compiler.fork>true</commons.compiler.fork>
-                <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>
+<!--                <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>-->
                 <commons.compiler.javac>${JAVA_1_8_HOME}/bin/javac</commons.compiler.javac>
                 <commons.compiler.javadoc>${JAVA_1_8_HOME}/bin/javadoc</commons.compiler.javadoc>
                 <commons.surefire.java>${JAVA_1_8_HOME}/bin/java</commons.surefire.java>
@@ -505,6 +504,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.3.1</version>
                         <configuration>
                             <excludes>
                                 <exclude>org/apache/commons/lang3/time/Java15BugFastDateParserTest.java</exclude>
@@ -564,4 +564,16 @@
             </roles>
         </developer>
     </developers>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
