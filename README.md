@@ -91,19 +91,32 @@ Additional Resources
 + [GitHub Issue Tracker](https://github.com/hopbit/live-odds-services/issues)
 + [Sportradar Official Website](https://sportradar.com)
 
-Other solutions of the same exercise available on GitHub:
+Other people solutions
+======================
 
-* https://github.com/austin-hart/internship-work
-* https://github.com/Eghizio/sportradar
-* https://github.com/GsiorX/scalo-sportradar
-* https://github.com/hifeamin/Sportradar.LiveOddsService
-* https://github.com/Ihor-Zaiets/live_odds_services
-* https://github.com/janszarwaryn/live-scoreboard
-* https://github.com/jdekarske/football_odds
-* https://github.com/jlasalle/Sportradar_ScoreBoard
-* https://github.com/jlasalle/Sportradar_ScoreBoard_OLD
-* https://github.com/JTurner1405/Sportradar.Service.Recruitment
-* https://github.com/mopielka/sportradar-scoreboard
-* https://github.com/Parodix007/SportRadar-Task
-* https://github.com/Taoo111/SportradarCodingAcademy
-* https://github.com/Piachsecki/SportRadarProject
+Below are available links to the solutions of the same exercise that are available publicly on GitHub.
+
+* ❌ https://github.com/austin-hart/internship-work (python) 
+* ❌ https://github.com/Eghizio/sportradar (typescript/javascript)
+* ❌ https://github.com/GsiorX/scalo-sportradar (php/docker)
+* ❌ https://github.com/hifeamin/Sportradar.LiveOddsService (c#/docker/gherkin)
+* ☕ https://github.com/Ihor-Zaiets/live_odds_services (java)
+  * Might be a good inspiration to do a quick draft of a Java-based solution  
+* 🌍 https://github.com/janszarwaryn/live-scoreboard (js/css/html)
+  * Might be a good idea to use as a template for frontend module ([live demo](http://live-scoreboard.jspace.pl/))
+* ❌ https://github.com/jdekarske/football_odds (python) 🐍
+* ☕ https://github.com/jlasalle/Sportradar_ScoreBoard
+  * Another Java solution might be worth investigating as well
+* ☕ https://github.com/jlasalle/Sportradar_ScoreBoard_OLD
+  * Another Java solution might be worth investigating as well
+* ❌ https://github.com/JTurner1405/Sportradar.Service.Recruitment (c#)
+* ❌ https://github.com/mopielka/sportradar-scoreboard (js/typescript library)
+  * Lib but written in JS/Typescript, might be worth looking into later on to take some inspiration how to set up a library. 
+* ☕ https://github.com/Parodix007/SportRadar-Task (java)
+  * Another Java solution might be worth investigating as well
+* 🌍 https://github.com/Taoo111/SportradarCodingAcademy (js/html/css)
+  * Might be a good inspiration for crating frontend module. 
+* ☕ https://github.com/Piachsecki/SportRadarProject (java)
+  * Spring boot service, with Gradle build, might be a nice middleware inspiration. 
+
+----
