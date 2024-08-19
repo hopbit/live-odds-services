@@ -15,19 +15,24 @@ It was created as a coding exercise for a Sportradar company recruitment process
 The Project is heavily inspired by [Apache Commons Lang](https://github.com/apache/commons-lang) project and solution
 created by [Ihor Zaiets](https://github.com/Ihor-Zaiets/live_odds_services) project. 
 
-The code is tested using the latest revision of the JDK for supported
-LTS releases: 8, 11, 17 and 21 currently.
-<!-- TODO: set up maven ci cd using gh actions for jdk 8, 11, 17 and 21 -->
-See https://github.com/hopbit/live-odds-services/blob/master/.github/workflows/maven.yml
+The code is currently tested using JDK8.
+Please ensure your build environment is up to date and kindly report any build issues.hih 
 
-Please ensure your build environment is up to date and kindly report any build issues.
+It is planned to support other JDK versions as well - 11, 17 and 21. More
+information available [here](https://github.com/hopbit/live-odds-services/issues/11).
+
+<!-- TODO: set up maven ci cd using gh actions for jdk 8, 11, 17 and 21 
+See https://github.com/hopbit/live-odds-services/blob/master/.github/workflows/maven.yml
+-->
+
 
 Documentation
 -------------
 
-More information can be found under the [doc](https://commons.apache.org/proper/commons-lang) directory.
-<!-- FIXME: publish Javadoc using this guide: https://vaadin.com/blog/host-your-javadoc-s-online-in-github -->
-The [Javadoc](http://hopbit.github.io/live-odds-services) can be browsed. 
+<!-- TODO: Create proper Javadocs: https://github.com/hopbit/live-odds-services/issues/12
+More information can be found under [doc](https://commons.apache.org/proper/commons-lang) directory.
+The [Javadoc](http://hopbit.github.io/live-odds-services) can be browsed.
+      -->
 Questions related to the usage of Live Odds Services should be posted as the new issue with 
 label `documentation` using [GitHub Issues](https://github.com/hopbit/live-odds-services/labels/documentation).
 
@@ -35,7 +40,7 @@ Getting the latest release
 --------------------------
 
 Warning: Library is not published yet. This will be performed 
-as a part of [this issue](https://github.com/hopbit/live-odds-services/issues/5)
+in [this issue](https://github.com/hopbit/live-odds-services/issues/5)
 
 <!-- FIXME: enable a publishing library to Maven Central -->
 The preferred way to use it in your project is by including it into your dependencies :
@@ -85,7 +90,6 @@ libraryDependencies += "io.github.hopbit" % "live-odds-services" % "0.0.1-SNAPSH
 [io.github.hopbit/live-odds-services "0.0.1-SNAPSHOT"]
 ```
 
-
 Alternatively, you can download source and binaries from [GitHub download page](https://github.com/hopbit/live-odds-services/releases). 
 After downloading, you need to put it on your classpath. 
 
@@ -101,15 +105,17 @@ Building requires the following tools:
 
 The required Java version is found in the `pom.xml` as the `maven.compiler.source` property.
 
-From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.
+<!-- From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.-->
+From a command shell, run `mvn install` to invoke the Maven goal to run all tests, checks and build library in your 
+local .M2_HOME repository. 
 
 Contributing
 ------------
 
 We accept Pull Requests via GitHub. There is no developer mailing list. If you'd like to contact us, 
 then please use GitHub Issues since it is the main channel of communication for contributors. 
-If you have a nice idea then create an [enhancement](https://github.com/hopbit/live-odds-services/labels/enhancement) 
-issue. If you found a bug then please create a [bug issue](https://github.com/hopbit/live-odds-services/labels/bug).  
+If you have a nice idea, then create an [enhancement](https://github.com/hopbit/live-odds-services/labels/enhancement) 
+issue. If you find a bug, then please create a [bug issue](https://github.com/hopbit/live-odds-services/labels/bug).  
 
 There are some guidelines that will make applying PRs easier for us:
 + No tabs! Please use spaces for indentation.
@@ -118,7 +124,7 @@ There are some guidelines that will make applying PRs easier for us:
   Disable on save actions like reformat source code or organize imports. 
   If you feel the source code should be reformatted, create a separate PR for this change.
 + Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running `mvn`.
-+ Before you pushing a PR, run `mvn` (by itself), this runs the default goal, which contains all build checks.
++ Before creating a PR, run `mvn` (by itself), this runs the default goal, which contains all build checks.
 + To see the code coverage report, regardless of coverage failures, run `mvn clean site -Dcommons.jacoco.haltOnFailure=false`
 
 You can learn more about contributing via GitHub in our [contribution guidelines](CONTRIBUTING.md).
@@ -147,7 +153,7 @@ Other people solutions
 Below are available links to the solutions of the same exercise that are available publicly on GitHub.
 
 * ✔ ☕ https://github.com/Ihor-Zaiets/live_odds_services (java)
-  * I have use it as an inspiration to do a quick draft of a Java-based solution
+  * I have used it as an inspiration to do a quick draft of a Java-based solution
 * ☕ https://github.com/jlasalle/Sportradar_ScoreBoard
   * Another Java solution might be worth investigating as well
 * ☕ https://github.com/jlasalle/Sportradar_ScoreBoard_OLD
@@ -160,14 +166,16 @@ Below are available links to the solutions of the same exercise that are availab
   * Might be a good idea to use as a template for frontend module ([live demo](http://live-scoreboard.jspace.pl/))
 * 🌍 https://github.com/Taoo111/SportradarCodingAcademy (js/html/css)
   * Might be a good inspiration for crating frontend module.
+* 🌍 https://github.com/mopielka/sportradar-scoreboard (js/typescript library)
+  * Lib but written in JS/Typescript, might be worth looking into later on to take some inspiration how to set up a library.
 
+<!--
 * ❌ https://github.com/austin-hart/internship-work (python) 
 * ❌ https://github.com/Eghizio/sportradar (typescript/javascript)
 * ❌ https://github.com/GsiorX/scalo-sportradar (php/docker)
 * ❌ https://github.com/hifeamin/Sportradar.LiveOddsService (c#/docker/gherkin)
 * ❌ https://github.com/jdekarske/football_odds (python) 🐍
 * ❌ https://github.com/JTurner1405/Sportradar.Service.Recruitment (c#)
-* ❌ https://github.com/mopielka/sportradar-scoreboard (js/typescript library)
-  * Lib but written in JS/Typescript, might be worth looking into later on to take some inspiration how to set up a library. 
+-->
 
 ----
