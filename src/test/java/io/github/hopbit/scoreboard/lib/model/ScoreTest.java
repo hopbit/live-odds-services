@@ -1,9 +1,11 @@
 package io.github.hopbit.scoreboard.lib.model;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+
 import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
 import io.github.hopbit.scoreboard.lib.exceptions.ValidateException;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import org.junit.jupiter.api.Test;
 
 public class ScoreTest {
 

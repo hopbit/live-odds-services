@@ -1,9 +1,10 @@
 package io.github.hopbit.scoreboard.lib.model;
 
-import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
-import io.github.hopbit.scoreboard.lib.model.enums.Country;
 import java.time.LocalDateTime;
 import java.util.Objects;
+
+import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
+import io.github.hopbit.scoreboard.lib.model.enums.Country;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
@@ -46,7 +47,7 @@ public class Match {
         if (this == o) {
             return true;
         }
-        if(o == null) {
+        if (o == null) {
             return false;
         }
         if (getClass() != o.getClass()) {

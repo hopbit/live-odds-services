@@ -1,11 +1,12 @@
 package io.github.hopbit.scoreboard.lib.model;
 
-import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
-import io.github.hopbit.scoreboard.lib.model.enums.Country;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+
+import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
+import io.github.hopbit.scoreboard.lib.model.enums.Country;
 
 public class MatchTest {
 

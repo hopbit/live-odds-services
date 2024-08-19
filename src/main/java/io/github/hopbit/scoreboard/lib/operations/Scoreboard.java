@@ -1,14 +1,15 @@
 package io.github.hopbit.scoreboard.lib.operations;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
 import io.github.hopbit.scoreboard.lib.exceptions.ValidateException;
 import io.github.hopbit.scoreboard.lib.model.Match;
 import io.github.hopbit.scoreboard.lib.model.Score;
 import io.github.hopbit.scoreboard.lib.model.enums.Country;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
