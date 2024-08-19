@@ -5,15 +5,16 @@ import io.github.hopbit.scoreboard.lib.exceptions.ValidateException;
 import io.github.hopbit.scoreboard.lib.model.Match;
 import io.github.hopbit.scoreboard.lib.model.Score;
 import io.github.hopbit.scoreboard.lib.model.enums.Country;
-import org.junit.jupiter.api.Test;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.junit.jupiter.api.Test;
 
 public class ScoreboardTest {
 

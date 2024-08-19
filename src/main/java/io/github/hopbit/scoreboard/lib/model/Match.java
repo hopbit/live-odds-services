@@ -2,11 +2,10 @@ package io.github.hopbit.scoreboard.lib.model;
 
 import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
 import io.github.hopbit.scoreboard.lib.model.enums.Country;
+import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -20,8 +19,9 @@ public class Match {
     private LocalDateTime startDate = LocalDateTime.now();
 
     public Match(@NonNull Country homeTeam, @NonNull Country awayTeam) {
-        if (homeTeam == awayTeam)
+        if (homeTeam == awayTeam) {
             throw new IllegalArgumentException(ExceptionMessage.MATCH_COUNTRIES_CANNOT_BE_THE_SAME);
+        }
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
     }

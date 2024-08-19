@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class MatchTest {
 
     private static final Integer DEFAULT_VALUE = 0;
-    
+
     @Test
     public void shouldCreateMatchWithDefaultValues() {
         Match match = new Match(Country.ARGENTINA, Country.BRAZIL);
