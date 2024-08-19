@@ -1,4 +1,4 @@
-package io.github.hopbit.liveoddsservices;
+package io.github.hopbit.scoreboard.lib;
 
 /**
  * HelloSportradar class.

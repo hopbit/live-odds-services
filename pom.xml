@@ -48,7 +48,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <commons.componentid>live-odds-services</commons.componentid>
         <commons.release.version>0.0.1</commons.release.version>
-        <commons.module.name>io.github.hopbit.liveoddsservices</commons.module.name>
+        <commons.module.name>io.github.hopbit.scoreboard.lib</commons.module.name>
         <checkstyle.configdir>src/site/resources/checkstyle</checkstyle.configdir>
         <!-- JMH Benchmark related properties, version, target compiler and name of the benchmarking uber jar. -->
         <jmh.version>1.37</jmh.version>
