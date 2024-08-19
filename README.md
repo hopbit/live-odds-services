@@ -33,10 +33,14 @@ label `documentation` using [GitHub Issues](https://github.com/hopbit/live-odds-
 
 Getting the latest release
 --------------------------
-You can download source and binaries from our [download page](https://github.com/hopbit/live-odds-services/releases).
+
+Warning: Library is not published yet. This will be performed 
+as a part of [this issue](https://github.com/hopbit/live-odds-services/issues/5)
 
 <!-- FIXME: enable a publishing library to Maven Central -->
-Alternatively, you can pull it from the central Maven repositories:
+The preferred way to use it in your project is by including it into your dependencies :
+
+**Apache Maven** 
 
 ```xml
 <dependency>
@@ -45,6 +49,46 @@ Alternatively, you can pull it from the central Maven repositories:
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
+
+**Apache Ivy**
+```xml
+<dependency org="io.github.hopbit" name="live-odds-services" rev="0.0.1-SNAPSHOT">
+  <artifact name="live-odds-services" type="jar" />
+</dependency>
+```
+
+**Groovy Grape**
+
+```groovy
+@Grapes([
+@Grab(group='io.github.hopbit', module='live-odds-services', version='0.0.1-SNAPSHOT')
+])
+class Example {
+    // 
+}
+```
+
+**Gradle/Grails**
+```groovy
+implementation 'io.github.hopbit:live-odds-services:0.0.1-SNAPSHOT'
+```
+
+**Scala SBT**
+
+```scala
+libraryDependencies += "io.github.hopbit" % "live-odds-services" % "0.0.1-SNAPSHOT"
+```
+
+**Leiningen**
+
+```clojure
+[io.github.hopbit/live-odds-services "0.0.1-SNAPSHOT"]
+```
+
+
+Alternatively, you can download source and binaries from [GitHub download page](https://github.com/hopbit/live-odds-services/releases). 
+After downloading, you need to put it on your classpath. 
+
 
 Building
 --------

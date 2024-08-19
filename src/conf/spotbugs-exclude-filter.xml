@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
   This file contains some false positive bugs detected by findbugs. Their
-  false positive nature has been analyzed individually and they have been
+  false positive nature has been analyzed individually, and they have been
   put here to instruct findbugs it must ignore them.
 -->
 <FindBugsFilter
@@ -79,7 +79,7 @@
     <Bug pattern="NP_BOOLEAN_RETURN_NULL" />
   </Match>
 
-  <!-- Reason: base class cannot be changed and field is properly checked against null so behavior is OK -->
+  <!-- Reason: base class cannot be changed, and the field is properly checked against null, so behavior is OK -->
   <Match>
     <Class name="org.apache.commons.lang3.text.ExtendedMessageFormat" />
     <Method name="applyPattern" />
@@ -158,8 +158,8 @@
     <Bug pattern="SF_SWITCH_FALLTHROUGH" />
   </Match>
 
-  <!-- Reason: Internal class that is used only as a key for an internal FormatCache. For this reason we can
-   be sure, that equals will never be called with null or types other than MultipartKey.
+  <!-- Reason: Internal class that is used only as a key for an internal FormatCache. For this reason, we can
+   be sure that equals will never be called with null or types other than MultipartKey.
   -->
   <Match>
     <Class name="org.apache.commons.lang3.time.FormatCache$MultipartKey" />

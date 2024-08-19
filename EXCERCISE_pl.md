@@ -2,9 +2,9 @@
  
 ## Instrukcje: 
  
-Proszę podać implementację Tablicy Wyników Mistrzostw Świata w Piłce Nożnej na Żywo jako prostą bibliotekę  lub aplikację frontendową:  
+Proszę podać implementację Tablicy Wyników Mistrzostw Świata w Piłce Nożnej na Żywo jako prostą bibliotekę lub aplikację frontendową:  
 1.	Prosimy o zapoznanie się z poniższymi wskazówkami.  
-2.	Postępuj zgodnie z wytycznymi , aby zrealizować zadanie zgodnie z wymaganiami opisanymi w dalszej części tego dokumentu.  
+2.	Postępuj zgodnie z wytycznymi, aby zrealizować zadanie zgodnie z wymaganiami opisanymi w dalszej części tego dokumentu.  
  
 ## Wytyczne: 
  
@@ -12,18 +12,18 @@ Proszę podać implementację Tablicy Wyników Mistrzostw Świata w Piłce Nożn
 ✅ Użyj rozwiązania magazynu w pamięci (na przykład po prostu użyj kolekcji do przechowywania informacji, które mogą być potrzebne).  
 ✅ Nie oczekujemy, że rozwiązanie będzie interfejsem API REST, aplikacją wiersza polecenia, usługą internetową lub mikrousługą. Wystarczy prosta implementacja biblioteki (lub aplikacji frontendowej).  
 ✅ Postaw na jakość. Korzystaj z Test-Driven Development (TDD), zwracaj uwagę na projektowanie obiektowe, Czysty Kod i przestrzeganie zasad SOLID.   
-✅ Podejście. Zakoduj rozwiązanie zgodnie ze swoimi standardami. Udostępnij swoje rozwiązanie za pomocą linku do repozytorium z kodem (np. GitHub, GitLab, BitBucket), ponieważ chcielibyśmy zobaczyć twoje postępy (ważna jest historia commitów)  
+✅ Podejście. Zakoduj rozwiązanie zgodnie ze swoimi standardami. Udostępnij swoje rozwiązanie za pomocą linku do repozytorium z kodem (np. github, gitlab, bitbucket), ponieważ chcielibyśmy zobaczyć twoje postępy (ważna jest historia commitów)  
 ✅ Dodaj plik README.md, w którym obok dokumentacji projektowej możesz zanotować wszelkie założenia lub rzeczy, o których chciałbyś nam wspomnieć na temat swojego rozwiązania.  
  
 Jeśli implementacja jest w języku frontendowym, to musi być zgodna ze wszystkimi powyższymi wytycznymi i dodatkowo należy zastosować się do poniższych sugestii:  
 - Jeśli rozwiązanie jest napisane w określonym frameworku lub bibliotece interfejsu użytkownika, sugerujemy napisanie najprostszego komponentu / komponentów, które będą służyć opisanej funkcjonalności. Nie trać czasu na to, aby wyglądał dobrze.  
-- Jeśli jest napisany w czystym JavaScript lub TypeScript, sugerujemy implementację rozwiązania jako prostej biblioteki (bez graficznego interfejsu użytkownika)  
+- Jeśli jest napisany w czystym JavaScript lub typescript, sugerujemy implementację rozwiązania jako prostej biblioteki (bez graficznego interfejsu użytkownika)  
  
 ## Wymagania dotyczące zadania: 
  
 Pracujesz w firmie zajmującej się danymi sportowymi i chcielibyśmy, abyś opracował nową bibliotekę tablic wyników Mistrzostw Świata w piłce nożnej na żywo (lub aplikację frontendową), która pokazuje wszystkie trwające mecze i ich wyniki.  
 Tablica wyników obsługuje następujące operacje:  
-1. Rozpocznij nową grę, zakładając początkowy wynik 0 – 0 i dodając go do tablicy wyników.  
+1. Rozpocznij nową grę, zakładając początkowy wynik `0 – 0` i dodając go do tablicy wyników.  
    Powinno to uchwycić następujące parametry: 
    a. Drużyna gospodarzy 
    b. Drużyna gości 
