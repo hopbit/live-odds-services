@@ -3,6 +3,7 @@ package io.github.hopbit.scoreboard.lib.model;
 import io.github.hopbit.scoreboard.lib.exceptions.ExceptionMessage;
 import io.github.hopbit.scoreboard.lib.model.enums.Country;
 import java.time.LocalDateTime;
+import java.util.Objects;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
@@ -54,5 +55,10 @@ public class Match {
         Match match = (Match) o;
         return getHomeTeam().equals(match.getHomeTeam()) &&
                 getAwayTeam().equals(match.getAwayTeam());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(homeTeam, awayTeam, score, startDate);
     }
 }
