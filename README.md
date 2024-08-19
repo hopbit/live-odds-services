@@ -15,6 +15,10 @@ It was created as a coding exercise for a Sportradar company recruitment process
 The Project is heavily inspired by [Apache Commons Lang](https://github.com/apache/commons-lang) project and solution
 created by [Ihor Zaiets](https://github.com/Ihor-Zaiets/live_odds_services) project. 
 
+Library follows standard maven project layout: 
+* code can be browsed under `src` directory
+* project configuration can be viewed in `pom.xml`
+
 The code is currently tested using JDK8.
 Please ensure your build environment is up to date and kindly report any build issues.hih 
 
