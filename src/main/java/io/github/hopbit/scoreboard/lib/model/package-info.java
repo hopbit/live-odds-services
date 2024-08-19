@@ -1,0 +1,1 @@
+package io.github.hopbit.scoreboard.lib.model;
