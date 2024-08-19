@@ -68,7 +68,7 @@
         <commons.encoding>UTF-8</commons.encoding>
         <!-- compiler and surefire plugin settings for "java" profiles -->
         <commons.compiler.fork>false</commons.compiler.fork>
-<!--        <commons.compiler.compilerVersion />-->
+        <commons.compiler.compilerVersion />
         <commons.compiler.javac />
         <commons.compiler.javadoc />
         <commons.compiler.version>3.13.0</commons.compiler.version>
@@ -195,16 +195,16 @@
                     <configuration>
                         <source>${maven.compiler.source}</source>
                         <target>${maven.compiler.target}</target>
-<!--                        <encoding>${commons.encoding}</encoding>-->
+                        <encoding>${commons.encoding}</encoding>
                         <!--
                           Fork is set true by the java-1.x profiles
                           This allows the use of a different version of the compiler from the
                           JDK being used to run Maven
                         -->
-<!--                        <fork>${commons.compiler.fork}</fork>-->
+                        <fork>${commons.compiler.fork}</fork>
                         <!-- the following are only necessary if fork is true -->
-<!--                        <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>-->
-<!--                        <executable>${commons.compiler.javac}</executable>-->
+                        <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
+                        <executable>${commons.compiler.javac}</executable>
                     </configuration>
                 </plugin>
             </plugins>
@@ -480,7 +480,7 @@
             <id>java-1.8</id>
             <properties>
                 <commons.compiler.fork>true</commons.compiler.fork>
-<!--                <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>-->
+                <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>
                 <commons.compiler.javac>${JAVA_1_8_HOME}/bin/javac</commons.compiler.javac>
                 <commons.compiler.javadoc>${JAVA_1_8_HOME}/bin/javadoc</commons.compiler.javadoc>
                 <commons.surefire.java>${JAVA_1_8_HOME}/bin/java</commons.surefire.java>
