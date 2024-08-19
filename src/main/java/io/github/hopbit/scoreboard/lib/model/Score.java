@@ -21,17 +21,4 @@ public class Score {
         this.awayTeamScore = awayTeamScore;
     }
 
-    public void setHomeTeamScore(Integer homeTeamScore) {
-        if (homeTeamScore < 0) {
-            throw new ValidateException(ExceptionMessage.SCORE_CANNOT_BE_LESS_THEN_ZERO);
-        }
-        this.homeTeamScore = homeTeamScore;
-    }
-
-    public void setAwayTeamScore(Integer awayTeamScore) {
-        if (awayTeamScore < 0) {
-            throw new ValidateException(ExceptionMessage.SCORE_CANNOT_BE_LESS_THEN_ZERO);
-        }
-        this.awayTeamScore = awayTeamScore;
-    }
 }
