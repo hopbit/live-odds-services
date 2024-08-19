@@ -12,7 +12,8 @@ Live Odds Services is a simple library providing Live Football World Cup Score B
 
 It was created as a coding exercise for a Sportradar company recruitment process.
 
-Project structure is heavily inspired by Apache Commons Lang project. 
+The Project is heavily inspired by [Apache Commons Lang](https://github.com/apache/commons-lang) project and solution
+created by [Ihor Zaiets](https://github.com/Ihor-Zaiets/live_odds_services) project. 
 
 The code is tested using the latest revision of the JDK for supported
 LTS releases: 8, 11, 17 and 21 currently.
@@ -48,7 +49,12 @@ Alternatively, you can pull it from the central Maven repositories:
 Building
 --------
 
-Building requires a Java JDK and [Apache Maven](https://maven.apache.org/).
+Building requires the following tools: 
+* Java JDK
+* [Apache Maven](https://maven.apache.org/)
+* [Lombok](https://projectlombok.org/download) 
+  * _Look into section "Install" to find instructions for your specific environment_
+
 The required Java version is found in the `pom.xml` as the `maven.compiler.source` property.
 
 From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.
@@ -96,27 +102,28 @@ Other people solutions
 
 Below are available links to the solutions of the same exercise that are available publicly on GitHub.
 
-* ❌ https://github.com/austin-hart/internship-work (python) 
-* ❌ https://github.com/Eghizio/sportradar (typescript/javascript)
-* ❌ https://github.com/GsiorX/scalo-sportradar (php/docker)
-* ❌ https://github.com/hifeamin/Sportradar.LiveOddsService (c#/docker/gherkin)
-* ☕ https://github.com/Ihor-Zaiets/live_odds_services (java)
-  * Might be a good inspiration to do a quick draft of a Java-based solution  
-* 🌍 https://github.com/janszarwaryn/live-scoreboard (js/css/html)
-  * Might be a good idea to use as a template for frontend module ([live demo](http://live-scoreboard.jspace.pl/))
-* ❌ https://github.com/jdekarske/football_odds (python) 🐍
+* ✔ ☕ https://github.com/Ihor-Zaiets/live_odds_services (java)
+  * I have use it as an inspiration to do a quick draft of a Java-based solution
 * ☕ https://github.com/jlasalle/Sportradar_ScoreBoard
   * Another Java solution might be worth investigating as well
 * ☕ https://github.com/jlasalle/Sportradar_ScoreBoard_OLD
   * Another Java solution might be worth investigating as well
+* ☕ https://github.com/Parodix007/SportRadar-Task (java)
+  * Another Java solution might be worth investigating as well
+* ☕ https://github.com/Piachsecki/SportRadarProject (java)
+  * Spring boot service, with Gradle build, might be a nice middleware inspiration.
+* 🌍 https://github.com/janszarwaryn/live-scoreboard (js/css/html)
+  * Might be a good idea to use as a template for frontend module ([live demo](http://live-scoreboard.jspace.pl/))
+* 🌍 https://github.com/Taoo111/SportradarCodingAcademy (js/html/css)
+  * Might be a good inspiration for crating frontend module.
+
+* ❌ https://github.com/austin-hart/internship-work (python) 
+* ❌ https://github.com/Eghizio/sportradar (typescript/javascript)
+* ❌ https://github.com/GsiorX/scalo-sportradar (php/docker)
+* ❌ https://github.com/hifeamin/Sportradar.LiveOddsService (c#/docker/gherkin)
+* ❌ https://github.com/jdekarske/football_odds (python) 🐍
 * ❌ https://github.com/JTurner1405/Sportradar.Service.Recruitment (c#)
 * ❌ https://github.com/mopielka/sportradar-scoreboard (js/typescript library)
   * Lib but written in JS/Typescript, might be worth looking into later on to take some inspiration how to set up a library. 
-* ☕ https://github.com/Parodix007/SportRadar-Task (java)
-  * Another Java solution might be worth investigating as well
-* 🌍 https://github.com/Taoo111/SportradarCodingAcademy (js/html/css)
-  * Might be a good inspiration for crating frontend module. 
-* ☕ https://github.com/Piachsecki/SportRadarProject (java)
-  * Spring boot service, with Gradle build, might be a nice middleware inspiration. 
 
 ----
