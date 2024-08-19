@@ -93,7 +93,6 @@ libraryDependencies += "io.github.hopbit" % "live-odds-services" % "0.0.1-SNAPSH
 Alternatively, you can download source and binaries from [GitHub download page](https://github.com/hopbit/live-odds-services/releases). 
 After downloading, you need to put it on your classpath. 
 
-
 Building
 --------
 
