@@ -39,7 +39,7 @@ label `documentation` using [GitHub Issues](https://github.com/hopbit/live-odds-
 Getting the latest release
 --------------------------
 
-‼ Warning ‼ Library is not published yet. This will be performed 
+**‼ Warning ‼** Library is not published yet. This will be performed 
 in [this issue](https://github.com/hopbit/live-odds-services/issues/5).  
 
 <!-- FIXME: enable a publishing library to Maven Central -->
