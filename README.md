@@ -10,6 +10,8 @@ Live Odds Services
 
 Live Odds Services is a simple library providing Live Football World Cup Score Board functionality. 
 
+Project as for now is providing a basic functionality and is under active development. More changes are planned to come. 
+
 It was created as a coding exercise for a Sportradar company recruitment process.
 
 The Project is heavily inspired by [Apache Commons Lang](https://github.com/apache/commons-lang) project and solution
