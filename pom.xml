@@ -525,14 +525,14 @@
             <id>benchmark</id>
             <properties>
                 <skipTests>true</skipTests>
-                <benchmark>org.apache</benchmark>
+                <benchmark>io.github.hopbit.scoreboard.lib</benchmark>
             </properties>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
-                        <version>3.4.0</version>
+                        <version>3.4.1</version>
                         <executions>
                             <execution>
                                 <id>benchmark</id>
