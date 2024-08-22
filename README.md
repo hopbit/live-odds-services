@@ -106,7 +106,7 @@ Resolving deltas: 100% (43/43), done.
 ### Build and install a library
 
 <!-- From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.-->
-From terminal run command `mvn install`.
+From terminal run command `mvn install -P java-1.8`.
 This will run all checks, build and install a library in your local M2_HOME repository
 (e.g. `/c/Users/user/.m2/repository/io/github/hopbit/live-odds-services`).
 You should see output similar to below: 
